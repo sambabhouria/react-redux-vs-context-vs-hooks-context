@@ -23,3 +23,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 <img src="src/assets/images/1.png" width="300" height="300"/>
 <img src="src/assets/images/2.png" width="300" height="300"/>
+<img src="src/assets/images/3.png" width="300" height="300"/>
