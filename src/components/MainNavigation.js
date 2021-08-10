@@ -13,6 +13,12 @@ const mainNavigation = props => (
         <li>
           <NavLink to="/cart">Cart ({props.cartItemNumber})</NavLink>
         </li>
+        <li>
+          <NavLink to="/productcontext">Products Context</NavLink>
+        </li>
+        <li>
+          <NavLink to="/cartcontext">Cart ({props.cartItemNumber})</NavLink>
+        </li>
       </ul>
     </nav>
   </header>

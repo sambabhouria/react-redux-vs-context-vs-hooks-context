@@ -1,19 +1,27 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import GlobalState from './context/GlobalState';
 import ProductsPage from './pages/Products';
 import CartPage from './pages/Cart';
+
+import ProductsPageContext from './pages/ProductsContext';
+import CartPageContext from './pages/CartContext';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" component={ProductsPage} exact />
-          <Route path="/cart" component={CartPage} exact />
-        </Switch>
-      </BrowserRouter>
+      <GlobalState>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={ProductsPage} exact />
+            <Route path="/cart" component={CartPage} exact />
+            <Route path="/productcontext" component={ProductsPageContext} exact />
+            <Route path="/cartcontext" component={CartPageContext} exact />
+          </Switch>
+        </BrowserRouter>
+      </GlobalState>
     );
   }
 }
